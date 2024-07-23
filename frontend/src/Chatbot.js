@@ -13,7 +13,7 @@ const Chatbot = () => {
         setChatLog([...chatLog, userMessage]);
 
         try {
-            const response = await axios.post('http://localhost:5000/ask', {
+            const response = await axios.post('https://ai-chatbot-xzut.onrender.com/ask', {
                 query: userInput,
             });
 
