@@ -1,0 +1,41 @@
+/* src/Chatbot.css */
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.chat-log {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.chat-entry {
+    margin: 5px 0;
+}
+
+.chat-entry.user {
+    text-align: right;
+}
+
+.chat-entry.bot {
+    text-align: left;
+}
+
+input[type="text"] {
+    width: calc(100% - 50px);
+    padding: 5px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: rgb(255, 190, 190);
+    border: none;
+    width: 50px;
+    padding: 5px;
+}
